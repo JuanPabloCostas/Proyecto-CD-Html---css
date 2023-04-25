@@ -16,12 +16,12 @@
 
 .contendorRegistro{
     width: 1072px;
-    height: 568px;
+    height: 572px;
 
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
-    margin-top: 32px;
+    margin-top: 64px;
 }
 
 .alinearIzquierda{
@@ -146,7 +146,7 @@
     border-radius: 100px;
     border-color: rgba(0, 0, 0, 0.01);
 
-    margin-top: 488px;
+    margin-top: 492px;
 
     font-family: 'Karla';
     font-style: normal;
