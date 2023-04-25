@@ -82,9 +82,78 @@
 }
 
 .tituloRegistro{
+    width: 177.63px;
+    height: 24px;
 
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+
+    color: #6D6875;
+    margin-top: 0px;
+    margin-left: 32px;
+    margin-bottom: 8px;
 }
 
 .inputRegistro{
-    
+    width: 488px;
+    height: 32px;
+
+    background: #F1F1F1;
+    border-radius: 4px;
+    margin-left: 32px;
+    margin-bottom: 32px;
+    border-color: rgba(0, 0, 0, 0.01);
+}
+
+.tituloRegistro2{
+    width: 177.63px;
+    height: 24px;
+
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+
+
+    color: #6D6875;
+    margin-top: 0px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+
+.inputRegistro2{
+    width: 488px;
+    height: 32px;
+
+    background: #F1F1F1;
+    border-radius: 4px;
+    margin-left: 16px;
+    margin-bottom: 32px;
+    border-color: rgba(0, 0, 0, 0.01);
+}
+
+.botonRegistrar{
+    position: absolute;
+    width: 488px;
+    height: 48px;
+
+    background: #B1A4C3;
+    border-radius: 100px;
+    border-color: rgba(0, 0, 0, 0.01);
+
+    margin-top: 488px;
+
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+
+    color: #FFFFFF;
 }
