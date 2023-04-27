@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body>
@@ -44,46 +44,189 @@
             </div>
         </div>
 
-        <table>
-            <tr>
-                <th>Tipo de Apoyo</th>
-                <th>Semestre</th>
-                <th>Monto</th>
-                <th>Periodo</th>
-            </tr>
-            <tr>
-                <th>Beca Administrativa</th>
-                <th>1</th>
-                <th>$18,900</th>
-                <th>2023-1</th>
-            </tr>
-            <tr>
-                <th>Beca Administrativa</th>
-                <th>1</th>
-                <th>$18,900</th>
-                <th>2023-1</th>
-            </tr>
-            <tr>
-                <th>Beca Administrativa</th>
-                <th>1</th>
-                <th>$18,900</th>
-                <th>2023-1</th>
-            </tr>
-            <tr>
-                <th>Beca Administrativa</th>
-                <th>1</th>
-                <th>$18,900</th>
-                <th>2023-1</th>
-            </tr>
-            <tr>
-                <th>Beca Administrativa</th>
-                <th>1</th>
-                <th>$18,900</th>
-                <th>2023-1</th>
-            </tr>
-        </table>
+        <div class="table-container">
+            <div class="grid-table table-title">
+                <span>Tipo de apoyo</span>
+                <span>Semestre</span>
+                <span>Monto</span>
+                <span>Periodo</span>
+            </div>
+
+
+            <div class="grid-table table-content" onclick="showData('1')">
+                <span>Beca Administrativa</span>
+                <span>1</span>
+                <span>$17,900</span>
+                <span>2023-1</span>
+            </div>
+            <div class="hide card-documents" id="1">
+                <p>Documentos</p>
+                <div class="document">
+                    <span>Identificación.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="document">
+                    <span>Comprobante.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="document">
+                    <span>Solicitud.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="observations">
+                    <p>Observaciones</p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident molestiae labore, libero
+                        atque voluptatibus, impedit eum alias, repellat mollitia nihil exercitationem voluptate eos
+                        doloremque nemo vero laboriosam? Ratione, sequi est omnis a iusto necessitatibus. Delectus
+                        maiores cum facilis earum veniam consequatur non ad quia, odio eligendi iure voluptas amet
+                        tempora excepturi illo dolore porro cumque, molestias corporis expedita quasi, odit suscipit sed
+                        ut? Ducimus consequatur officiis quaerat sit corporis similique?</span>
+                </div>
+            </div>
+
+            <div class="grid-table table-content" onclick="showData('2')">
+                <span>Beca Administrativa</span>
+                <span>1</span>
+                <span>$17,900</span>
+                <span>2023-1</span>
+            </div>
+            <div class="hide card-documents" id="2">
+                <p>Documentos</p>
+                <div class="document">
+                    <span>Identificación.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="document">
+                    <span>Comprobante.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="document">
+                    <span>Solicitud.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="observations">
+                    <p>Observaciones</p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident molestiae labore, libero
+                        atque voluptatibus, impedit eum alias, repellat mollitia nihil exercitationem voluptate eos
+                        doloremque nemo vero laboriosam? Ratione, sequi est omnis a iusto necessitatibus. Delectus
+                        maiores cum facilis earum veniam consequatur non ad quia, odio eligendi iure voluptas amet
+                        tempora excepturi illo dolore porro cumque, molestias corporis expedita quasi, odit suscipit sed
+                        ut? Ducimus consequatur officiis quaerat sit corporis similique?</span>
+                </div>
+            </div>
+
+            <div class="grid-table table-content" onclick="showData('3')">
+                <span>Beca Administrativa</span>
+                <span>1</span>
+                <span>$17,900</span>
+                <span>2023-1</span>
+            </div>
+            <div class="hide card-documents" id="3">
+                <p>Documentos</p>
+                <div class="document">
+                    <span>Identificación.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="document">
+                    <span>Comprobante.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="document">
+                    <span>Solicitud.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="observations">
+                    <p>Observaciones</p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident molestiae labore, libero
+                        atque voluptatibus, impedit eum alias, repellat mollitia nihil exercitationem voluptate eos
+                        doloremque nemo vero laboriosam? Ratione, sequi est omnis a iusto necessitatibus. Delectus
+                        maiores cum facilis earum veniam consequatur non ad quia, odio eligendi iure voluptas amet
+                        tempora excepturi illo dolore porro cumque, molestias corporis expedita quasi, odit suscipit sed
+                        ut? Ducimus consequatur officiis quaerat sit corporis similique?</span>
+                </div>
+            </div>
+
+            <div class="grid-table table-content" onclick="showData('4')">
+                <span>Beca Administrativa</span>
+                <span>1</span>
+                <span>$17,900</span>
+                <span>2023-1</span>
+            </div>
+            <div class="hide card-documents" id="4">
+                <p>Documentos</p>
+                <div class="document">
+                    <span>Identificación.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="document">
+                    <span>Comprobante.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="document">
+                    <span>Solicitud.pdf</span>
+                    <div>
+                        <img src="https://pic.onlinewebfonts.com/svg/img_253905.png" alt="img">
+                        <img src="https://pic.onlinewebfonts.com/svg/img_79473.png" alt="img">
+                    </div>
+                </div>
+                <div class="observations">
+                    <p>Observaciones</p>
+                    <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident molestiae labore, libero
+                        atque voluptatibus, impedit eum alias, repellat mollitia nihil exercitationem voluptate eos
+                        doloremque nemo vero laboriosam? Ratione, sequi est omnis a iusto necessitatibus. Delectus
+                        maiores cum facilis earum veniam consequatur non ad quia, odio eligendi iure voluptas amet
+                        tempora excepturi illo dolore porro cumque, molestias corporis expedita quasi, odit suscipit sed
+                        ut? Ducimus consequatur officiis quaerat sit corporis similique?</span>
+                </div>
+            </div>
+        </div>
+
+        
     </main>
 
+    <script>
+        function showData(id) {
+            const x = document.getElementById(id);
+            if (x.className.indexOf("hide") === 0) {
+                x.className = x.className.replace("hide", "show");
+            } else {
+                x.className = x.className.replace("show", "hide");
+            }
+        }
+    </script>
 
 </body>
 
