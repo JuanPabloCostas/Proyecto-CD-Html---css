@@ -1,9 +1,12 @@
-:root{
+:root {
     --primary-color: #B1A4C3;
     --secundary_color: #F1F1F1;
+    --tertiary-color: #6D6875;
     --nav-bg-color: var(--primary-color);
     --nav-font-color: var(--secundary_color);
-    --color-student-data: #6D6875;
+    --table-title-color: var(--primary-color);
+    --table-content-color: var(--tertiary-color);
+    --color-student-data: var(--tertiary-color);
     --color-student-title: #BABABA;
 }
 
@@ -16,14 +19,14 @@
 
 /* NavBar */
 
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     padding: 20px 110px;
     background-color: var(--nav-bg-color);
 }
 
-nav a{
+nav a {
     height: 40px;
 }
 
@@ -32,41 +35,41 @@ nav a img {
     height: 40px;
 }
 
-.user-profile{
+.user-profile {
     display: flex;
     align-items: center;
 }
 
-.user-image{
+.user-image {
     border-radius: 50%;
     width: 32px;
     height: 32px;
 }
 
-.user-info{
+.user-info {
     text-align: right;
     padding-right: 8px;
     color: var(--nav-font-color);
 }
 
-.user-name{
+.user-name {
     font-size: 16px;
     margin-bottom: 5px;
 }
 
-.email{
+.email {
     font-size: 11px;
 }
 
 /* Main Content */
 
-main{
+main {
     padding: 0 110px;
 }
 
 /* Student Info */
 
-.student-container{
+.student-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -76,31 +79,58 @@ main{
     padding: 60px 0;
 }
 
-.student-container p:nth-child(1){
+.student-container p:nth-child(1) {
     margin-bottom: 4px;
     font-size: 18px;
     color: var(--color-student-data);
     font-weight: bold;
 }
 
-.student-container p:nth-child(2){
-    font-size: 14px;
-    color: var(--color-student-data);
+.student-container p:nth-child(2) {
+    font-size: 15px;
+    color: var(--color-student-title);
 }
 
-.expedient-image{
+.expedient-image {
     display: flex;
 }
 
-.student-image{
+.student-image {
     width: 46px;
     height: 46px;
     margin-right: 50px;
     border-radius: 50%;
-    background-color: #F1F1F1;
+    background-color: var(--secundary_color);
     padding: 10px;
 }
 
-.student-degree{
+.student-degree {
     justify-self: end;
+}
+
+/* Table Scholarship */
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+tr {
+    color: var(--table-content-color);
+    font-size: 16px;
+}
+
+tr:nth-child(1) {
+    color: var(--table-title-color);
+    background-color: white !important;
+    border-bottom: 1px solid #BABABA;
+}
+
+tr:nth-child(odd) {
+    background-color: #bababa2a;
+}
+
+th {
+    padding: 12px 0;
 }
