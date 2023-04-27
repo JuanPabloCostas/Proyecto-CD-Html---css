@@ -1,0 +1,106 @@
+:root{
+    --primary-color: #B1A4C3;
+    --secundary_color: #F1F1F1;
+    --nav-bg-color: var(--primary-color);
+    --nav-font-color: var(--secundary_color);
+    --color-student-data: #6D6875;
+    --color-student-title: #BABABA;
+}
+
+* {
+    font-family: 'Karla', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* NavBar */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 110px;
+    background-color: var(--nav-bg-color);
+}
+
+nav a{
+    height: 40px;
+}
+
+nav a img {
+    width: auto;
+    height: 40px;
+}
+
+.user-profile{
+    display: flex;
+    align-items: center;
+}
+
+.user-image{
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+}
+
+.user-info{
+    text-align: right;
+    padding-right: 8px;
+    color: var(--nav-font-color);
+}
+
+.user-name{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.email{
+    font-size: 11px;
+}
+
+/* Main Content */
+
+main{
+    padding: 0 110px;
+}
+
+/* Student Info */
+
+.student-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    column-gap: 20px;
+    min-width: 550px;
+    padding: 60px 0;
+}
+
+.student-container p:nth-child(1){
+    margin-bottom: 4px;
+    font-size: 18px;
+    color: var(--color-student-data);
+    font-weight: bold;
+}
+
+.student-container p:nth-child(2){
+    font-size: 14px;
+    color: var(--color-student-data);
+}
+
+.expedient-image{
+    display: flex;
+}
+
+.student-image{
+    width: 46px;
+    height: 46px;
+    margin-right: 50px;
+    border-radius: 50%;
+    background-color: #F1F1F1;
+    padding: 10px;
+}
+
+.student-degree{
+    justify-self: end;
+}
