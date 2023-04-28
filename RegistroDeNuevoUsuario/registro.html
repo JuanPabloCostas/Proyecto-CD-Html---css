@@ -18,9 +18,15 @@
         document.getElementById("mensaje").innerHTML = "";  
       }
     }  
-    </script>  
+</script>  
+
 <body>
     <main>
+        <div class="mensajeConfirmacion" id="confirmacion">
+            <img src="/img/Vector 96.svg" alt="">
+            <p>Registro Exitoso</p>
+            <input title="Iniciar Sesion" type="button" value="Iniciar Sesion">
+        </div>
         <div class="contenedor">
             <div class="contendorRegistro">
                 <div class="alinearEnmedio">
@@ -60,7 +66,12 @@
                     </div>
                   </div>
                 <div class="alinearEnmedio">
-                    <input type="submit" value="Registrar" class="botonRegistrar">
+                    <input onclick="activarPopup()" type="submit" value="Registrar" class="botonRegistrar">
+                    <div class="popup" onclick="activarPopup()">Click me to toggle the popup!
+                        <span class="popuptext" id="myPopup">
+                            <h1>Hola!!!!</h1>
+                        </span>
+                    </div>
                     
                 </div>
                 </form>
@@ -73,6 +84,13 @@
     <div class="divlogoGrande">
         <img src="/img/logouaqGrande.svg" alt="">
     </div>  
+
+    <script>
+        function activarPopup() {
+          var popup = document.getElementById("confirmacion");
+          popup.classList.toggle("show");
+        }
+    </script>
     
 </body>
 </html>
