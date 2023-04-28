@@ -59,8 +59,8 @@
     width: 45%;
 }
 
-.elemento{
-    
+.Elemento{
+    margin-bottom: 32px;
     
 }
 
@@ -125,7 +125,7 @@
 
     background: #F1F1F1;
     border-radius: 4px;
-    margin-bottom: 32px;
+    
     border-color: rgba(0, 0, 0, 0.03);
 
     font-family: 'Karla';
@@ -168,3 +168,20 @@
     cursor: pointer;
 }
 
+.ShowPasswordNotMatchesError{
+    display: none;
+}
+
+.alerta{
+    height: 15px;
+
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #FF575F;
+}

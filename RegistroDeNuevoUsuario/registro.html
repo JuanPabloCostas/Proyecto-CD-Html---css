@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <title>Registro</title>
 </head>
+<script>  
+    function verifyPassword() {  
+      var Contraseña = document.getElementById("Contraseña").value;  
+      var ConfirmarContraseña = document.getElementById("ConfirmarContraseña").value;  
+      
+      if (ConfirmarContraseña.length > 0 && (Contraseña!==ConfirmarContraseña)){
+        document.getElementById("mensaje").innerHTML = "⚠ Las Contraseñas no coinicen";  
+      } else{
+        document.getElementById("mensaje").innerHTML = "";  
+      }
+    }  
+    </script>  
 <body>
     <main>
         <div class="contenedor">
@@ -15,7 +27,7 @@
                     <a href="/index.html" title="Index"><img src="/img/logouaq.svg" alt="" class="logouaq"></a>
                     <p class="registrarseTexto">Registrarse</p>
                 </div>
-                
+                <form action="" method="post">
                 <div class="contenedorFlex">
                     <div class="columna">
                         <div class="Elemento">
@@ -24,11 +36,12 @@
                         </div>
                         <div class="Elemento">
                             <p class="tituloRegistro">Contraseña</p>
-                            <input class="inputRegistro" title="correo" placeholder="************" type="password" name="correo" id="Contraseña">
+                            <input onkeypress="" class="inputRegistro" title="correo" placeholder="************" type="password" name="Contraseña" id="Contraseña" oninput="verifyPassword()">
                         </div>
                         <div class="Elemento">
                             <p class="tituloRegistro">Repetir Contraseña</p>
-                            <input class="inputRegistro" title="correo" placeholder="************" type="password" name="correo" id="Contraseña2">
+                            <input class="inputRegistro" title="correo" placeholder="************" type="password" name="ConfirmarContraseña" id="ConfirmarContraseña" oninput="verifyPassword()">
+                            <p class="alerta" id="mensaje"></p>
                         </div>
                     </div>
                     <div class="columna">
@@ -47,8 +60,10 @@
                     </div>
                   </div>
                 <div class="alinearEnmedio">
-                    <input type="button" value="Registrar" class="botonRegistrar">
+                    <input type="submit" value="Registrar" class="botonRegistrar">
+                    
                 </div>
+                </form>
             </div>      
                 
         </div>
