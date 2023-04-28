@@ -15,13 +15,14 @@
 }
 
 .contendorRegistro{
-    width: 1072px;
-    height: 572px;
+    width: 85%;
+    max-width: 1072px;
+    height: auto;
 
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2);
     border-radius: 24px;
-    margin-top: 64px;
+    margin-top: 32px;
 }
 
 .alinearIzquierda{
@@ -30,7 +31,8 @@
 }
 .alinearEnmedio{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .alinearDerecha{
     display: flex;
@@ -47,14 +49,22 @@
 }
 
 .logouaq{
-    position: absolute;
     width: 59.7px;
     height: 80px;
     margin-top: 32px;
 }
 
+.columna{
+    
+    width: 45%;
+}
+
+.elemento{
+    
+    
+}
+
 .registrarseTexto{
-    position: absolute;
     height: 32px;
 
     font-family: 'Karla';
@@ -68,50 +78,55 @@
 
     color: #B1A4C3;
 
-    margin-top: 136px;
+    margin-top: 24px;
 }
 
 .contenedorFlex{
     display: flex;
-    justify-content: space-around;
-    margin-top: 192px;
-}
+    
+    margin-top: 24px;
 
-.columna{
-    width: 50%;
+    justify-content: space-evenly;
 }
+@media (max-width: 800px) {
+    .contenedorFlex {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    .columna{
+    
+        width: 90%;
+    }
+  }
 
 .tituloRegistro{
-    width: 177.63px;
+    /*width: 177.63px;*/
     height: 24px;
 
     font-family: 'Karla';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 23px;
 
 
     color: #6D6875;
     margin-top: 0px;
-    margin-left: 32px;
+    
     margin-bottom: 8px;
 }
 
 .inputRegistro{
-    width: 488px;
+    width: -webkit-fill-available;
+   /* max-width: 488px;*/
     height: 32px;
 
     background: #F1F1F1;
     border-radius: 4px;
-    margin-left: 32px;
     margin-bottom: 32px;
-    border-color: rgba(0, 0, 0, 0.01);
-}
-
-.tituloRegistro2{
-    width: 177.63px;
-    height: 24px;
+    border-color: rgba(0, 0, 0, 0.03);
 
     font-family: 'Karla';
     font-style: normal;
@@ -119,34 +134,21 @@
     font-size: 20px;
     line-height: 23px;
 
-
     color: #6D6875;
-    margin-top: 0px;
-    margin-left: 16px;
-    margin-bottom: 8px;
-}
-
-.inputRegistro2{
-    width: 488px;
-    height: 32px;
-
-    background: #F1F1F1;
-    border-radius: 4px;
-    margin-left: 16px;
-    margin-bottom: 32px;
-    border-color: rgba(0, 0, 0, 0.01);
 }
 
 .botonRegistrar{
-    position: absolute;
-    width: 488px;
+    width: 80%;
+    max-width: 488px;
     height: 48px;
 
     background: #B1A4C3;
     border-radius: 100px;
     border-color: rgba(0, 0, 0, 0.01);
 
-    margin-top: 492px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+    
 
     font-family: 'Karla';
     font-style: normal;
@@ -156,4 +158,13 @@
     text-align: center;
 
     color: #FFFFFF;
+
+    
 }
+
+.botonRegistrar:hover{
+    transition-duration: 0.2s;
+    background: #9272be;
+    cursor: pointer;
+}
+
