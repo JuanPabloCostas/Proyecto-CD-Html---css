@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <script>  
     function verifyPassword() {  
@@ -22,16 +25,19 @@
 
 <body>
     <main>
-        <div class="mensajeConfirmacion" id="confirmacion">
-            <img src="/img/Vector 96.svg" alt="">
-            <p>Registro Exitoso</p>
-            <input title="Iniciar Sesion" type="button" value="Iniciar Sesion">
+        <div class="alinearEnmedio">
+            <div class="mensajeConfirmacion" id="confirmacion">
+                <img src="/img/Vector 96.svg" alt="">
+                <p>Registro Exitoso</p>
+                <input title="Iniciar Sesion" type="button" value="Ir a Iniciar Sesion">
+            </div>
         </div>
         <div class="contenedor">
             <div class="contendorRegistro">
-                <div class="alinearEnmedio">
-                    <a href="/index.html" title="Index"><img src="/img/logouaq.svg" alt="" class="logouaq"></a>
+                <div class="alinearTitulo">
+                    <a href="/index.html" title="Index" class="img"><img src="/img/logouaq.svg" alt="" class="logouaq"></a>
                     <p class="registrarseTexto">Registrarse</p>
+                    <a href="/index.html" title="Index"  class="close"><img src="/img/Vector 95.svg" alt=""></a>
                 </div>
                 <form action="" method="post">
                 <div class="contenedorFlex">
@@ -66,17 +72,10 @@
                     </div>
                   </div>
                 <div class="alinearEnmedio">
-                    <input onclick="activarPopup()" type="submit" value="Registrar" class="botonRegistrar">
-                    <div class="popup" onclick="activarPopup()">Click me to toggle the popup!
-                        <span class="popuptext" id="myPopup">
-                            <h1>Hola!!!!</h1>
-                        </span>
-                    </div>
-                    
+                    <input title="botonRegistro" onclick="activarPopup()" value="Registrar" class="botonRegistrar" type="button">
                 </div>
                 </form>
-            </div>      
-                
+            </div>     
         </div>
         
         
@@ -88,9 +87,12 @@
     <script>
         function activarPopup() {
           var popup = document.getElementById("confirmacion");
+          var popup2 = document.getElementById("backgroundFix");
           popup.classList.toggle("show");
+          popup2.classList.toggle("show");
         }
     </script>
-    
+    <div id="backgroundFix" class="cuadroOscuro" onclick="activarPopup()">
+    </div>
 </body>
 </html>

@@ -1,3 +1,11 @@
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative;
+}
+body{
+    height:100%; /* force the BODY element to match the height of the HTML element */
+}
+
 
 .divlogoGrande{
     position: absolute;
@@ -12,6 +20,7 @@
     justify-content: center;
     position: relative;
     z-index: 2;
+    
 }
 
 .contendorRegistro{
@@ -29,10 +38,40 @@
     display: flex;
     justify-content: left;
 }
+
+.alinearTitulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 128px;
+}
+
+.alinearTitulo .close{
+    align-self: start;
+    margin-top: 16px;
+    margin-right: 16px;
+}
+
+.alinearTitulo p{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.alinearTitulo .img{
+    
+    margin-left: 32px;
+}
+
+.alinearTitulo a{
+}
+
+
 .alinearEnmedio{
     display: flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .alinearDerecha{
     display: flex;
@@ -51,7 +90,6 @@
 .logouaq{
     width: 59.7px;
     height: 80px;
-    margin-top: 32px;
 }
 
 .columna{
@@ -70,9 +108,8 @@
     font-family: 'Karla';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 28px;
-    display: flex;
     align-items: center;
     text-align: center;
 
@@ -84,7 +121,7 @@
 .contenedorFlex{
     display: flex;
     
-    margin-top: 24px;
+    
 
     justify-content: space-evenly;
 }
@@ -99,7 +136,7 @@
     
         width: 90%;
     }
-  }
+}
 
 .tituloRegistro{
     /*width: 177.63px;*/
@@ -137,6 +174,10 @@
     color: #6D6875;
 }
 
+.inputRegistro:focus-visible{
+    outline: 0.2px solid #2b2b2b;
+}
+
 .botonRegistrar{
     width: 80%;
     max-width: 488px;
@@ -145,8 +186,9 @@
     background: #B1A4C3;
     border-radius: 100px;
     border-color: rgba(0, 0, 0, 0.01);
+    
 
-    margin-top: 32px;
+    margin-top: 0px;
     margin-bottom: 32px;
     
 
@@ -168,11 +210,17 @@
     cursor: pointer;
 }
 
+.botonRegistrar:focus-visible {
+    outline: 0.2px solid #2b2b2b;
+}
+
 .ShowPasswordNotMatchesError{
     display: none;
 }
 
 .alerta{
+    position: absolute;
+    margin-top: 8px;
     height: 15px;
 
     font-family: 'Karla';
@@ -189,37 +237,7 @@
 
 
 /****popup****/
-.popup {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
-  
-  /* The actual popup */
-  .popup .popuptext {
-    visibility: hidden;
-    width: 160px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 0px;
-    padding: 8px 0;
-    position: absolute;
-    z-index: 3;
-  }
-  
 
-  
-  /* Toggle this class - hide and show the popup */
-  .popup .show {
-    visibility: visible;
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
-  }
   
   /* Add animation (fade in the popup) */
   @-webkit-keyframes fadeIn {
@@ -232,16 +250,15 @@
     to {opacity:1 ;}
   }
 
-
-
-
-
-
   .mensajeConfirmacion{
     visibility: hidden;
+    
     position: absolute;
     width: 480px;
     height: 264px;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+
 
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.25);
@@ -249,6 +266,20 @@
     z-index: 3;
 
     text-align: center;
+  }
+
+  
+  .cuadroOscuro{
+    position:absolute;
+    visibility: hidden;
+    top: 0px;
+    left: 0px; 
+    right: 0px;
+    z-index: 2;
+    bottom: 0;
+    
+    overflow:hidden;
+    background-color: #23232488;
   }
 
   .show {
@@ -269,7 +300,6 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 28px;
-    /* identical to box height */
 
     
 
@@ -291,7 +321,6 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
-    /* identical to box height */
 
     text-align: center;
 
