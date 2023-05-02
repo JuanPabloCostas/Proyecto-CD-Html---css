@@ -63,8 +63,6 @@ body{
     margin-left: 32px;
 }
 
-.alinearTitulo a{
-}
 
 
 .alinearEnmedio{
@@ -325,4 +323,25 @@ body{
     text-align: center;
 
     color: #FFFFFF;
+  }
+
+  .passwordContainer{
+    display: flex;
+  }
+
+  .passwordContainer input[type=checkbox] {
+    display: none;
+  }
+
+  .label{
+    height: 100%;
+    margin-left: -30px;
+    display: inline-block;
+    background: url("/img/Vector\ 90.svg") no-repeat left center;
+    padding-left: 30px;
+  }
+
+  .passwordContainer input[type=checkbox]:checked + .label {
+    
+    background: url("/img/eye.svg") no-repeat left center; 
   }
