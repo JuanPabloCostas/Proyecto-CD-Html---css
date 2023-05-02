@@ -4,10 +4,12 @@
     --tertiary-color: #6D6875;
     --nav-bg-color: var(--primary-color);
     --nav-font-color: var(--secundary_color);
+    --student-title-color: #BABABA;
+    --line-table-color: #BABABA;
+    --student-data-color: var(--tertiary-color);
     --table-title-font-color: var(--primary-color);
     --table-content-font-color: var(--tertiary-color);
-    --color-student-data: var(--tertiary-color);
-    --color-student-title: #BABABA;
+    --table-content-hover-bg-color: #EAEAEA;
 }
 
 * {
@@ -15,6 +17,17 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* Back-ground UAQ Logo */
+
+body {
+    background-image: url(../img/logouaqGrande.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% 100%;
+    background-size: 38vh;
+    background-blend-mode: multiply;
 }
 
 /* NavBar */
@@ -75,20 +88,20 @@ main {
     align-items: center;
     text-align: center;
     column-gap: 20px;
-    min-width: 550px;
+    min-width: 500px;
     padding: 60px 0;
 }
 
 .student-container p:nth-child(1) {
     margin-bottom: 4px;
     font-size: 18px;
-    color: var(--color-student-data);
+    color: var(--student-data-color);
     font-weight: bold;
 }
 
 .student-container p:nth-child(2) {
     font-size: 15px;
-    color: var(--color-student-title);
+    color: var(--student-title-color);
 }
 
 .expedient-image {
@@ -110,9 +123,13 @@ main {
 
 /* Table Scholarship */
 
+.table-container{
+    margin-bottom: 25px;
+}
+
 .grid-table {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 40% repeat(3, 1fr);
     justify-items: center;
     align-items: center;
     min-width: 600px;
@@ -127,7 +144,7 @@ main {
 
 .table-title {
     color: var(--table-title-font-color);
-    border-bottom: 1px solid #BABABA;
+    border-bottom: 1px solid var(--line-table-color);
 }
 
 .table-content {
@@ -140,15 +157,7 @@ main {
 }
 
 .table-content:hover {
-    background-color: #eaeaea;
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
+    background-color: var(--table-content-hover-bg-color);
 }
 
 /* Document */
@@ -156,10 +165,11 @@ main {
     padding: 18px 70px;
     box-shadow: 0px 10px 10px rgba(186, 186, 186, 0.47);
     border-radius: 0px 0px 10px 10px;
+    background-color: #fff;
 }
 
 .card-documents:nth-child(4n+1){
-    background-color: #bababa2a;
+    background-color: #f4f4f4;
 }
 
 .document {
@@ -186,4 +196,15 @@ main {
 .document span,
 .observations span {
     color: var(--table-content-font-color);
+}
+
+
+/* Show / Hide Elements */
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
 }
