@@ -5,8 +5,8 @@
     --nav-bg-color: var(--primary-color);
     --nav-font-color: var(--secundary_color);
     --student-title-color: #BABABA;
-    --line-table-color: #BABABA;
     --student-data-color: var(--tertiary-color);
+    --line-table-color: #BABABA;
     --table-title-font-color: var(--primary-color);
     --table-content-font-color: var(--tertiary-color);
     --table-content-hover-bg-color: #EAEAEA;
@@ -179,12 +179,12 @@ main {
 }
 
 .document div img:nth-child(1) {
-    width: 25px;
-    margin-right: 6px;
+    width: 22px;
+    margin-right: 2px;
 }
 
 .document div img:nth-child(2) {
-    width: 18px;
+    width: 22px;
 }
 
 .card-documents p,
