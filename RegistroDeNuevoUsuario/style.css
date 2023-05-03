@@ -325,6 +325,25 @@ body{
     color: #FFFFFF;
   }
 
+  .mensajeConfirmacion .cerrar {
+    position: absolute;
+    margin-top: 0px;
+    margin-right: 0px;
+    right: 15px;
+    left: auto;
+    top: 15px;
+  }
+
+  .mensajeConfirmacion a img{
+    margin-top: 0;
+  }
+
+  .mensajeConfirmacion input:hover{
+    transition-duration: 0.2s;
+    background: #9272be;
+    cursor: pointer;
+  }
+
   .passwordContainer{
     display: flex;
   }
