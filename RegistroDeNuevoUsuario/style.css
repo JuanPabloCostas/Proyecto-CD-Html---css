@@ -249,12 +249,13 @@ body{
   }
 
   .mensajeConfirmacion{
-    visibility: hidden;
+    /* visibility: hidden; */
+    display: none;
     
     position: absolute;
     width: 480px;
     height: 264px;
-    top: 0; bottom: 0; left: 0; right: 0;
+    top: 0; bottom: 0; left: 0; right : 0;
     margin: auto;
 
 
@@ -269,7 +270,7 @@ body{
   
   .cuadroOscuro{
     position:absolute;
-    visibility: hidden;
+    display: none;
     top: 0px;
     left: 0px; 
     right: 0px;
@@ -281,7 +282,7 @@ body{
   }
 
   .show {
-    visibility: visible;
+    display: block;
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s;
   }
