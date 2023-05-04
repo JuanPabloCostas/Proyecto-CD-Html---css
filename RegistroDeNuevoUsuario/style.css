@@ -131,7 +131,6 @@ body{
         flex-wrap: wrap;
     }
     .columna{
-    
         width: 90%;
     }
 }
@@ -357,11 +356,12 @@ body{
     height: 100%;
     margin-left: -30px;
     display: inline-block;
-    background: url("/img/Vector\ 90.svg") no-repeat left center;
+    background: url(/img/Vector\ 90.svg) no-repeat left center;
     padding-left: 30px;
   }
 
   .passwordContainer input[type=checkbox]:checked + .label {
+    background-size: contain;
+    background: url(/img/Asset\ 2.svg) no-repeat left center ; 
     
-    background: url("/img/eye.svg") no-repeat left center; 
   }
